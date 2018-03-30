@@ -138,7 +138,7 @@ public class BridgeInternal {
                 headers.put(HttpConstants.HttpHeaders.PARALLELIZE_CROSS_PARTITION_QUERY, Boolean.TRUE.toString());
             }
 
-            if (feedOptions.getPopulateQueryMetrics() != 0) {
+            if (feedOptions.getPopulateQueryMetrics()) {
                 headers.put(HttpConstants.HttpHeaders.POPULATE_QUERY_METRICS, Boolean.TRUE.toString());
             }
         }

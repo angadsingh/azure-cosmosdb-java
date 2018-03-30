@@ -186,7 +186,7 @@ public final class FeedOptions extends FeedOptionsBase {
         return maxBufferedItemCount;
     }
 
-    public int getPopulateQueryMetrics() {
+    public boolean getPopulateQueryMetrics() {
         return populateQueryMetrics;
     }
 
