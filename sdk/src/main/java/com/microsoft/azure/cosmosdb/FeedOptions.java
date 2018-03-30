@@ -186,6 +186,11 @@ public final class FeedOptions extends FeedOptionsBase {
         return maxBufferedItemCount;
     }
 
+    
+    public void setPopulateQueryMetrics(boolean populateQueryMetrics) {
+        this.populateQueryMetrics = populateQueryMetrics;
+    }
+    
     public boolean getPopulateQueryMetrics() {
         return populateQueryMetrics;
     }
