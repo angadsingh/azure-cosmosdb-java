@@ -97,6 +97,7 @@ public class HttpConstants {
         public static final String IS_QUERY = "x-ms-documentdb-isquery";
         public static final String ENABLE_CROSS_PARTITION_QUERY = "x-ms-documentdb-query-enablecrosspartition";
         public static final String PARALLELIZE_CROSS_PARTITION_QUERY = "x-ms-documentdb-query-parallelizecrosspartitionquery";
+        public static final String POPULATE_QUERY_METRICS = "x-ms-documentdb-populatequerymetrics";
 
         // Our custom DocDB headers
         public static final String CONTINUATION = "x-ms-continuation";

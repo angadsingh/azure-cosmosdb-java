@@ -34,6 +34,7 @@ public final class FeedOptions extends FeedOptionsBase {
     private Boolean enableCrossPartitionQuery;
     private int maxDegreeOfParallelism;
     private int maxBufferedItemCount;
+    private boolean populateQueryMetrics;
 
     public FeedOptions() {}
 
@@ -46,6 +47,7 @@ public final class FeedOptions extends FeedOptionsBase {
         this.enableCrossPartitionQuery = options.enableCrossPartitionQuery;
         this.maxDegreeOfParallelism = options.maxDegreeOfParallelism;
         this.maxBufferedItemCount = options.maxBufferedItemCount;
+        this.populateQueryMetrics = options.populateQueryMetrics;
     }
 
     /**
@@ -182,6 +184,10 @@ public final class FeedOptions extends FeedOptionsBase {
      */
     public int getMaxBufferedItemCount() {
         return maxBufferedItemCount;
+    }
+
+    public int getPopulateQueryMetrics() {
+        return populateQueryMetrics;
     }
 
     /**
